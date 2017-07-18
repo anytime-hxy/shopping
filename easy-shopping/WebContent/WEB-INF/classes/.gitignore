@@ -1,7 +1,4 @@
 /admin/
-/applicationContext-mvc.xml
-/applicationContext-shiro.xml
-/applicationContext.xml
 /com/
 /easyshopping.properties
 /easyshopping.xml
