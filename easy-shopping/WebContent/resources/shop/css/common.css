@@ -10,8 +10,11 @@
  */
 
 /* ---------- Reset ---------- */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+	tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table,
+	caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
@@ -23,7 +26,7 @@ html {
 	_height: 100%;
 	-webkit-text-size-adjust: none;
 	-ms-text-size-adjust: none;
-	_filter: expression(document.execCommand("BackgroundImageCache", false, true));
+	_filter: expression(document.execCommand ( "BackgroundImageCache", false, true));
 }
 
 body {
@@ -33,7 +36,7 @@ body {
 	color: #666666;
 	background-color: white;
 	_background-image: url(../images/bgGreen.jpg);
-	background-size:100% 100%;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 
@@ -73,7 +76,6 @@ textarea {
 }
 
 /* ---------- Base ---------- */
-
 .black {
 	color: black;
 }
@@ -122,7 +124,8 @@ textarea {
 	position: fixed;
 	_position: absolute;
 	top: 0px;
-	_top: expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight);
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight - 
+		this.offsetHeight);
 	left: 0px;
 	z-index: 99;
 	filter: alpha(opacity = 30);
@@ -133,24 +136,23 @@ textarea {
 }
 
 .topFixedDiv {
-	top:0px;
-	position:fixed;
+	top: 0px;
+	position: fixed;
 	z-index: 1000;
 }
 
-.qrCodeDiv{
-	top:250px;
-	right:5px;
-	position:fixed;
+.qrCodeDiv {
+	top: 250px;
+	right: 5px;
+	position: fixed;
 	z-index: 1001;
 }
 
 /* ---------- Grid ---------- */
-
 div.container {
 	width: 1200px;
 	margin: 0px auto;
-	padding-bottom:10px;
+	padding-bottom: 10px;
 	*zoom: 1;
 }
 
@@ -163,7 +165,15 @@ div.container:after {
 	content: "\0020";
 }
 
-div.container .span1, div.container .span2, div.container .span3, div.container .span4, div.container .span5, div.container .span6, div.container .span7, div.container .span8, div.container .span9, div.container .span10, div.container .span11, div.container .span12, div.container .span13, div.container .span14, div.container .span15, div.container .span16, div.container .span17, div.container .span18, div.container .span19, div.container .span20, div.container .span21, div.container .span22, div.container .span23, div.container .span24, div.container .span25, div.container .span26, div.container .span27, div.container .span28, div.container .span29, div.container .span30 {
+div.container .span1, div.container .span2, div.container .span3, div.container .span4,
+	div.container .span5, div.container .span6, div.container .span7, div.container .span8,
+	div.container .span9, div.container .span10, div.container .span11, div.container .span12,
+	div.container .span13, div.container .span14, div.container .span15,
+	div.container .span16, div.container .span17, div.container .span18,
+	div.container .span19, div.container .span20, div.container .span21,
+	div.container .span22, div.container .span23, div.container .span24,
+	div.container .span25, div.container .span26, div.container .span27,
+	div.container .span28, div.container .span29, div.container .span30 {
 	_display: inline;
 	float: left;
 	margin-right: 10px;
@@ -291,7 +301,7 @@ div.container .span30 {
 	width: 1200px;
 }
 
-div.fullspan{
+div.fullspan {
 	width: 100%;
 }
 
@@ -484,7 +494,6 @@ div.container .last {
 }
 
 /* ---------- Form ---------- */
-
 input.text {
 	width: 220px;
 	height: 26px;
@@ -511,9 +520,12 @@ input.text:hover {
 	-ms-transition: box-shadow linear 0.2s;
 	-o-transition: box-shadow linear 0.2s;
 	transition: box-shadow linear 0.2s;
-	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
 	border: 1px solid #74b9ef;
 	background: none;
 }
@@ -557,9 +569,12 @@ textarea.text:hover {
 	-ms-transition: box-shadow linear 0.2s;
 	-o-transition: box-shadow linear 0.2s;
 	transition: box-shadow linear 0.2s;
-	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px
+		rgba(82, 168, 236, 0.6);
 	border: 1px solid #74b9ef;
 }
 
@@ -609,9 +624,12 @@ a.button:hover {
 	-ms-transition: box-shadow linear 0.2s;
 	-o-transition: box-shadow linear 0.2s;
 	transition: box-shadow linear 0.2s;
-	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
 	border: 1px solid #cccccc;
 	background-position: 0px -60px;
 }
@@ -659,12 +677,12 @@ input.button {
 	background: url(../images/common.gif) 0px -30px repeat-x;
 }
 
-@-moz-document url-prefix() {
-	input.button {
-		padding: 0px 10px;
-	}
+@
+-moz-document url-prefix () {input .button { padding:0px10px;
+	
 }
 
+}
 input.button:hover {
 	color: #333333;
 	-webkit-transition: box-shadow linear 0.2s;
@@ -672,9 +690,12 @@ input.button:hover {
 	-ms-transition: box-shadow linear 0.2s;
 	-o-transition: box-shadow linear 0.2s;
 	transition: box-shadow linear 0.2s;
-	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 0px 6px
+		rgba(0, 0, 0, 0.15);
 	border: 1px solid #cccccc;
 	background-position: 0px -60px;
 }
@@ -714,22 +735,28 @@ label.fieldError {
 }
 
 /* ---------- Message ---------- */
-
 div.xxMessage {
 	padding: 10px 30px;
 	display: none;
 	position: fixed;
 	_position: absolute;
 	top: 25%;
-	_top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(25 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + "px");
+	_top: expression(( document.documentElement.scrollTop || 
+		document.body.scrollTop)+ Math.round(25* (document.documentElement.offsetHeight||
+		 document.body.clientHeight)/100)+ "px");
 	left: 50%;
 	z-index: 100;
 	overflow: hidden;
 	-webkit-box-shadow: 1px 1px 6px #999999;
 	-moz-box-shadow: 1px 1px 6px #999999;
 	box-shadow: 1px 1px 6px #999999;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=0,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=90,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=180,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=270,strength=3)";
-	filter: progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=0,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=90,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=180,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=270,strength=3);
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=0,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=90,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,direction=180,strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,direction=270,strength=3)";
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,
+		direction=0, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,
+		direction=90, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#d4d4d4,
+		direction=180, strength=3) progid:DXImageTransform.Microsoft.Shadow(color=#e5e5e5,
+		direction=270, strength=3);
 	border: 1px solid #999999;
 	background-color: #ffffff;
 }
@@ -762,7 +789,6 @@ div.xxMessage .messageIframe {
 }
 
 /* ---------- Loading ---------- */
-
 span.loadingIcon {
 	width: 20px;
 	height: 20px;
@@ -786,7 +812,6 @@ span.loadingBar {
 }
 
 /* ---------- Path ---------- */
-
 div.path {
 	height: 25px;
 	line-height: 25px;
@@ -810,7 +835,6 @@ div.path li.last {
 }
 
 /* ---------- Header ---------- */
-
 div.header .logo {
 	height: 50px;
 	padding-top: 10px;
@@ -822,7 +846,7 @@ div.header .headerAd {
 	height: 60px;
 }
 
-div.header .topNav{
+div.header .topNav {
 	background-color: lightgrey;
 }
 
@@ -839,7 +863,8 @@ div.header .topNav li a {
 	margin: 0px 6px;
 }
 
-div.header .headerLogin, div.header .headerRegister, div.header .headerUsername, div.header .headerLogout {
+div.header .headerLogin, div.header .headerRegister, div.header .headerUsername,
+	div.header .headerLogout {
 	display: none;
 }
 
@@ -858,7 +883,7 @@ div.header .phone {
 	height: 28px;
 	line-height: 28px;
 	float: right;
-	margin-right:5px;
+	margin-right: 5px;
 	margin-bottom: 4px;
 	padding: 0px 10px 0px 26px;
 	white-space: nowrap;
@@ -870,11 +895,12 @@ div.header .phone strong {
 	font-size: 14px;
 	font-weight: bold;
 }
+
 div.header .mainNav {
 	width: 100%;
 	height: 36px;
-	padding-left:75px;
-	margin-bottom:10px;
+	padding-left: 75px;
+	margin-bottom: 10px;
 	overflow: hidden;
 	background-color: #089ff6;
 }
@@ -935,7 +961,7 @@ div.header .tag a {
 }
 
 div.header .hotSearch {
-	margin-top:10px;
+	margin-top: 10px;
 	width: 950px;
 	height: 20px;
 	line-height: 20px;
@@ -958,9 +984,9 @@ div.header .search {
 	_background: url(../images/searchMain.png) no-repeat;
 }
 
-div.container .searchBox{
+div.container .searchBox {
 	width: 510px;
-	height:40px;
+	height: 40px;
 	background: url(../images/searchMain.png) no-repeat;
 	float: left;
 	margin-right: 10px;
@@ -969,7 +995,7 @@ div.container .searchBox{
 }
 
 div.header .search .keyword {
-	width:315px;
+	width: 315px;
 	height: 40px;
 	line-height: 35px;
 	margin: 0px;
@@ -999,7 +1025,7 @@ div.header .search button {
 }
 
 /* ---------- Footer ---------- */
-div.footer .footer_img{
+div.footer .footer_img {
 	text-align: center;
 }
 
@@ -1025,7 +1051,6 @@ div.footer .copyright {
 }
 
 /* ---------- Pagination ---------- */
-
 div.pagination {
 	height: 20px;
 	float: right;
@@ -1109,7 +1134,7 @@ div.pagination span.lastPage {
 
 div.pagination .currentPage {
 	padding: 0px 5px;
-	color: #fd6d01!important;
+	color: #fd6d01 !important;
 	font-weight: bold;
 	cursor: default;
 	border: 1px solid #fd6d01;
